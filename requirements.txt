@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+numpy
+fastembed
+langchain-core
+langchain-community
+faiss-cpu
+rank-bm25
+httpx

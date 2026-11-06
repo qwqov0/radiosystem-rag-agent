@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(RadioSystemCourse LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(BattleSim_v5 src/BattleDriver.cpp src/Battle/BattleWorld.cpp src/Core/WorldMap.cpp)
+add_executable(CourseSim src/CourseDriver.cpp src/Core/WorldMap.cpp src/Entities/SquadEntity.cpp)
+foreach(target BattleSim_v5 CourseSim)
+  target_include_directories(${target} PRIVATE src third_party)
+endforeach()
